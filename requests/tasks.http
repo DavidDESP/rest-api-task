@@ -1,0 +1,35 @@
+GET http://localhost:3000/api/tasks
+
+###
+GET http://localhost:3000/api/tasks?page=1&size=4
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "New WebApp",
+    "description": "Great!",
+    "done": true
+}
+
+
+###
+GET http://localhost:3000/api/tasks/61a02c28e01ad41bf9daa5e5
+
+###
+DELETE http://localhost:3000/api/tasks/61a133baf474cf56bd1787a6
+
+###
+GET http://localhost:3000/api/tasks/done
+
+
+###
+PUT http://localhost:3000/api/tasks/61a55ab11327ccbd0f8f5e5a
+Content-Type: application/json
+
+{
+    "title": "Texto actualizado nuevamente desde mi REST API"
+}
+
+//Seguir minuto: 1:56
+//Ya tenemos nuestra api, ahora solo falta convertirla
