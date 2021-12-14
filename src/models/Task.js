@@ -23,3 +23,4 @@ const TaskSchema = new Schema({
 TaskSchema.plugin(mongoosePaginate);
 export default model('Task', TaskSchema);
 
+//Pruebita
